@@ -54,10 +54,13 @@
     float: left;       /* para el aside */ 
  }
 
+ .main .imagen-{
+   width: 100%;
+ }
+
  .main .imagen img{
    width: 100%;
    vertical-align: top;      /* eliminar un pequeño margen*/
-  
  }
 
  .main .posts{

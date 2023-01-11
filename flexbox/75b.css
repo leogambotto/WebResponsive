@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: arial;
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 700px;
+    height: 700px;
+    background: #212d40;
+    
+    /*Flexbox*/
+    display: flex;                        /*forma correcta, seria como el float left*/
+    flex-direction: row;                  /*Por defecto es row*/
+    flex-wrap: wrap;                      /*Por defecto es wrap, como el 6 no entra lo coloca abajo. nowrap lo coloca arriba pero achica el tamaño de todas las cajas. hay que saber cuando ponerla y cuando no*/
+    /*flex-flow: row wrap; Es igual que las anteriores pero abreviadas*/
+    justify-content: space-between;       /*Como el float, para poscionar.Es mas facil poscionar varios elementos juntos*/
+     /*align-items: center;                Centar items verticalmente */     
+    align-content: center;            /*es parecida que aling items pero cuando tenemos mas de una linea y solo puede usarse una*/
+}
+
+.caja{
+    width: 150px;
+    height: 100px;
+    background: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+    
+    flex: 1 1 auto;
+}
+
+
+/*.uno{
+    order: 3;
+}
+
+.dos{
+    order: 2;
+}
+
+.tres{
+    order: 1;
+}*/
